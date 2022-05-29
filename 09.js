@@ -12,7 +12,7 @@ var second = '27';
 // 출력
 // 2019/04/26 11:34:27
 
-// 나의 답:
+// 나의 답
 var slash = '/';
 var space = ' ';
 var colon = ':'
