@@ -17,7 +17,7 @@ for (let i = 0; i < scoreStr.length; i++) {
     sum += parseInt(scoreStr[i]);
 }
 
-console.log(sum/(scoreStr.length));
+console.log(Math.floor(sum/(scoreStr.length)));
 
 // 답안
 // const scores = prompt('세 과목의 점수를 입력하세요.').split(' ');
