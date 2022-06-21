@@ -4,12 +4,10 @@
 
 // <pass>에 코드를 작성하여 two함수를 완성하세요.
 
-// 나의 답
-function one(n){
-    function two(){
-        //pass
-        
-        
+function one(val){
+    function two(num){
+        const sq = Math.pow(num, val);
+        return sq; 
     }
     return two;
 }
