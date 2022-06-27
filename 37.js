@@ -10,8 +10,9 @@
 
 const names = prompt('이름을 입력해주세요.').split(' ');
 let result = {};
-let winner = "";
+let winner = '';
 
+// 답안
 for(let index in names){
     let name = names[index];
     result[name] = result[name] === undefined ? 1 : result[name] += 1;
@@ -25,3 +26,33 @@ winner = Object.keys(result).reduce(function(a, b){
 });
 
 console.log(`${winner}(이)가 총 ${result[winner]}표로 반장이 되었습니다.`);
+
+// 친구들 풀이 2
+// const data = prompt('이름을 입력해주세요.').split(' ');
+// const setData = new Set(data);
+// const objData = {};
+// let winner='';
+
+// setData.forEach((name) => {
+//     objData[name]=data.filter((x)=>x===name).length;
+// });
+
+// winner = Object.keys(objData).reduce(function(a, b){
+//     return objData[a] > objData[b] ? a : b
+// });
+
+// 친구들 풀이 3
+// const students = prompt("학생들이 뽑은 후보들").trim();
+// function voting(students) {
+//     const candidate = new Set(students.split(" "));
+//     const result = {};
+//     candidate.forEach((name) => (result[name] = students.split(name).length - 1));
+//     const maxNum = Math.max(...Object.values(result));
+
+//     for (let key in result) {
+//         if (result[key] === maxNum) {
+//         return `${key}님이 ${maxNum}표로 선발되었습니다`;
+//         }
+//     }
+// }
+// voting(students);
